@@ -1,5 +1,10 @@
 # SMS 4 Connect SMS API Wrapper for PHP
 
+<a href="https://travis-ci.org/developifynet/sms4connect-php"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/developifynet/sms4connect-php"><img src="https://poser.pugx.org/developifynet/sms4connect-php/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/developifynet/sms4connect-php"><img src="https://poser.pugx.org/developifynet/sms4connect-php/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/developifynet/sms4connect-php"><img src="https://poser.pugx.org/developifynet/sms4connect-php/license.svg" alt="License"></a>
+
 This composer package offers a quick SMS setup for your php or Laravel applications.
 
 ## Installation
@@ -68,7 +73,7 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS::checkDeliveryStatus($SMSObj);
+    $sms4connect = new Sms4ConnectSMS::checkDeliveryStatus($SMSObj);
 }
 ```
 
@@ -85,7 +90,7 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS::checkDeliveryStatus($SMSObj);
+    $sms4connect = new Sms4ConnectSMS::checkDeliveryStatus($SMSObj);
 }
 ```
 
@@ -101,7 +106,7 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS::checkBalance($SMSObj);
+    $sms4connect = new Sms4ConnectSMS::checkBalance($SMSObj);
 }
 ```
 
@@ -125,8 +130,8 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS();
-    $response = $telenor->SendSMS($SMSObj);
+    $sms4connect = new Sms4ConnectSMS();
+    $response = $sms4connect->SendSMS($SMSObj);
 }
 ```
 
@@ -144,8 +149,8 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
      );
     
-    $telenor = new Sms4ConnectSMS();
-    $response = $telenor->SendSMS($SMSObj);
+    $sms4connect = new Sms4ConnectSMS();
+    $response = $sms4connect->SendSMS($SMSObj);
 }
 ```
 
@@ -164,8 +169,8 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS();
-    $response = $telenor->checkDeliveryStatus($SMSObj);
+    $sms4connect = new Sms4ConnectSMS();
+    $response = $sms4connect->checkDeliveryStatus($SMSObj);
 }
 ```
 
@@ -182,8 +187,8 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS();
-    $response = $telenor->checkDeliveryStatus($SMSObj);
+    $sms4connect = new Sms4ConnectSMS();
+    $response = $sms4connect->checkDeliveryStatus($SMSObj);
 }
 ```
 
@@ -199,8 +204,8 @@ public function index()
         'test_mode' => '0',                                 // 0 for Production, 1 for Mocking as Test
     );
     
-    $telenor = new Sms4ConnectSMS();
-    $response = $telenor->checkBalance($SMSObj);
+    $sms4connect = new Sms4ConnectSMS();
+    $response = $sms4connect->checkBalance($SMSObj);
 }
 ```
 
