@@ -1,0 +1,44 @@
+{
+    "name": "developifynet/sms4connect-php",
+    "description": "SMS 4 Connect SMS API Wrapper for PHP",
+    "license": "MIT",
+    "keywords": [
+        "sms 4 connect",
+        "sms",
+        "api",
+        "php",
+        "sdk"
+    ],
+    "authors": [
+        {
+            "name": "Mustafa Liaqat",
+            "email": "mustafa@developify.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Developifynet\\Sms4Connect": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Developifynet\\Sms4Connect\\Sms4ConnectServiceProvider"
+            ],
+            "aliases": {
+                "Sms4Connect": "Developifynet\\Sms4Connect\\Sms4Connect"
+            }
+        }
+    }
+}
